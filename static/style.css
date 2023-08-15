@@ -1,0 +1,65 @@
+/* creating styling for eyes */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+display: grid;
+place-items: center;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+font-family: "Bebas Neue", cursive;
+background: #3270b1;  
+ }
+
+.card {
+  background: white;
+  border-radius: 4px;
+  height: 85vh;
+  width: 85vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (min-width:1000px){
+  .card{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .card img.catt {
+    max-height: 50vh;
+  }
+}
+img.catt{
+  max-height: 40vh;
+  max-width: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.text{
+  padding: 1em;
+}
+.space{
+  height: 100px;
+}
+
+.card h1 {
+  font-size: 4em;
+}
+
+.card p{
+  font-size: 2em;
+}
